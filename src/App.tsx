@@ -35,7 +35,7 @@ export default function App() {
             <Route path=":categorySlug/:slug" element={<PostDetail />} />
             
             {/* Pillars */}
-            <Route path="laser-engraving" element={<PillarLaser />} />
+            <Route path="/laser" element={<PillarLaser />} />
             <Route path="3d-printing" element={<Pillar3D />} />
             
             {/* Single Views */}

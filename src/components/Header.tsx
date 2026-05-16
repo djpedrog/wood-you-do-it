@@ -26,7 +26,7 @@ export function Header() {
               <Link to="/posts" className="text-gray-400 hover:text-white transition-colors">
                 Projects
               </Link>
-              <Link to="/posts/laserpecker-2-pro-laser-engraver-review" className="text-gray-400 hover:text-white transition-colors">
+              <Link to="/laser" className="text-gray-400 hover:text-white transition-colors">
                 Laser Engraving
               </Link>
               <Link to="/3d-printing" className="text-gray-400 hover:text-white transition-colors">
