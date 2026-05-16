@@ -151,7 +151,7 @@ export function PostDetail() {
               </a>
 
               <a
-                href="https://www.paypal.com/paypalme/woodyoudoit"
+                href="https://paypal.me/djpedrog"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 bg-[#003087] text-white font-bold rounded-xl hover:scale-105 transition"
