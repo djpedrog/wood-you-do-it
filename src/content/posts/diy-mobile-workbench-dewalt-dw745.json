@@ -1,0 +1,35 @@
+{
+  "slug": "diy-mobile-workbench-dewalt-dw745",
+  "title": "DIY Mobile Workbench for DeWalt DW745 Table Saw",
+  "category": "DIY Projects",
+  "date": "2020-08-17",
+  "youtubeVideoId": "buZD18Yqp28",
+  "originalBloggerUrl": "",
+  "excerpt": "Build a mobile outfeed and assembly workbench designed to integrate the DeWalt DW745 table saw. Includes free plans and SketchUp files.",
+  "heroImage": "/images/posts/workbench-01.png",
+  "tags": ["workshop", "workbench", "table-saw", "DIY"],
+  "body": "## Overview\nI built this mobile outfeed/assembly/workbench to integrate my DeWalt DW745 (European model) table saw into my workshop.\n\nThe goal was to create a practical, mobile and versatile workspace for cutting, assembling and general work.\n\n## Dimensions\n- Length: 234 cm\n- Width: 100 cm\n- Height: 92 cm\n\n## Materials\n- 12x Pine framing wood (100mm x 50mm)\n- 16mm Valchromat (top)\n- 12mm OSB (bottom shelf)\n- Screws\n- Wood glue\n- Casters\n\n## Cost\nThe total cost was approximately $200.\n\n## Features\n- Integrated DeWalt DW745 table saw\n- Large assembly surface\n- Bottom storage shelf\n- Fully mobile design\n\n## Image Gallery\n<div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;\">\n  <img src=\"/images/posts/workbench-01.png\" style=\"width:100%;border-radius:8px;\" />\n  <img src=\"/images/posts/workbench-02.png\" style=\"width:100%;border-radius:8px;\" />\n  <img src=\"/images/posts/workbench-03.png\" style=\"width:100%;border-radius:8px;\" />\n  <img src=\"/images/posts/workbench-structure-01.png\" style=\"width:100%;border-radius:8px;\" />\n  <img src=\"/images/posts/workbench-structure-02.png\" style=\"width:100%;border-radius:8px;\" />\n  <img src=\"/images/posts/workbench-cut-01.png\" style=\"width:100%;border-radius:8px;\" />\n  <img src=\"/images/posts/workbench-cut-02.png\" style=\"width:100%;border-radius:8px;\" />\n</div>\n\n## Free Plans & Files\nAll plans and SketchUp files for this project are available below in the download section.\n\nIf you found this project useful, feel free to support the channel.\n\n## Contact\nIf you build one, I would love to see your results.\n\nEmail: **djpedrog@gmail.com**",
+  "resources": [],
+  "downloads": [
+    {
+      "label": "Workbench Plans (Metric)",
+      "url": "https://www.dropbox.com/scl/fo/9chefzzbno0ax4ftnlr0b/AJAwOQmAS1qScNRLNd_YJEk?rlkey=aauu9unc1tahjnbr02m6et2rn&st=uh09mzqe&dl=0",
+      "fileType": "PDF"
+    },
+    {
+      "label": "Workbench Plans (Imperial)",
+      "url": "https://www.dropbox.com/scl/fo/mzzsfd6rvxjipl1me9r5y/AAacc_yi-YMuGkA0dazAcso?rlkey=trtglnl89f8z7tmojmnpcivyo&st=6l5p0acc&dl=0",
+      "fileType": "PDF"
+    },
+    {
+      "label": "SketchUp File (Metric)",
+      "url": "https://www.dropbox.com/scl/fo/tb3dq958bgo61jvqcv2t8/APUAU8xqprARbaKRnP3KyWg?rlkey=0qo41qxc98ds9kywovcv2xi58&st=ajzq0xyn&dl=0",
+      "fileType": "SKP"
+    },
+    {
+      "label": "SketchUp File (Imperial)",
+      "url": "https://www.dropbox.com/scl/fo/tb3dq958bgo61jvqcv2t8/APUAU8xqprARbaKRnP3KyWg?rlkey=0qo41qxc98ds9kywovcv2xi58&st=ajzq0xyn&dl=0",
+      "fileType": "SKP"
+    }
+  ]
+}

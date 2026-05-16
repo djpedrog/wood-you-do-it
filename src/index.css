@@ -1,0 +1,155 @@
+/* Fonts (fix: removed HTML entity &amp; -> &) */
+
+/* Tailwind v4 style imports (keep as-is if your project uses them) */
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* =======================================================================
+   BRAND TOKENS — OFFICIAL COLORS (from your PDF)
+   Primary: #FEBE10 | Ink: #000000 | Paper: #FFFFFF
+   ======================================================================= */
+:root {
+  /* OFFICIAL BRAND COLORS (PDF) */
+  --brand: #FEBE10;        /* primary */
+  --brand-hover: #E3AA00;  /* hover (slightly darker) */
+  --brand-100: #FFF3BF;    /* soft tint background */
+
+  --ink: #000000;          /* black */
+  --paper: #FFFFFF;        /* white */
+
+  /* Dark theme neutrals (kept from your current direction) */
+  --night: #15181E;        /* page background */
+  --panel: #0F1115;        /* cards/panels */
+  --border: rgba(255, 255, 255, 0.10);
+  --muted: rgba(255, 255, 255, 0.70);
+  --text: rgba(255, 255, 255, 0.92);
+}
+
+/* Tailwind Theme Tokens (v4) */
+@theme {
+  --color-brand: var(--brand);
+  --color-brand-600: var(--brand-hover);
+  --color-brand-100: var(--brand-100);
+
+  --color-night: var(--night);
+  --color-ink: var(--ink);
+  --color-paper: var(--paper);
+
+  
+/* Font family aligned with logo spec: Helvetica (Bold via font-weight) */
+  --font-serif: "Helvetica Neue", Helvetica, Arial, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-sans:  "Helvetica Neue", Helvetica, Arial, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+}
+
+/* =======================================================================
+   GLOBAL BASE STYLES
+   ======================================================================= */
+html, body {
+  background: var(--night);
+  color: var(--text);
+  font-family: var(--font-sans, "Inter", sans-serif);
+}
+
+/* Links */
+a {
+  color: var(--brand);
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: var(--brand-hover);
+}
+
+/* Ensure markdown typography links follow brand (prose / prose-invert) */
+.prose a,
+.prose-invert a {
+  color: var(--brand) !important;
+}
+.prose a:hover,
+.prose-invert a:hover {
+  color: var(--brand-hover) !important;
+}
+
+/* Focus ring (accessibility) */
+:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+/* =======================================================================
+   BUTTONS (brand-correct)
+   NOTE: On #FEBE10 use BLACK text for readability.
+   ======================================================================= */
+.btn-primary {
+  background: var(--brand);
+  color: var(--ink);
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  transition: background 0.2s ease, transform 0.12s ease, box-shadow 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.btn-primary:hover {
+  background: var(--brand-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 30px rgba(254, 190, 16, 0.18);
+}
+
+.btn-primary:active {
+  transform: translateY(0px);
+  box-shadow: none;
+}
+
+/* Optional: secondary button used in your dark theme */
+.btn-secondary {
+  background: transparent;
+  color: var(--text);
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.btn-secondary:hover {
+  border-color: rgba(254, 190, 16, 0.55);
+  color: var(--paper);
+  background: rgba(254, 190, 16, 0.06);
+}
+/* -----------------------------------------------------------------------
+   Bulletproof override: YouTube subscribe button text MUST stay black
+   (prevents global a { color: var(--brand) } from overriding it)
+   ----------------------------------------------------------------------- */
+a.yt-subscribe-btn,
+a.yt-subscribe-btn:visited,
+a.yt-subscribe-btn:hover,
+a.yt-subscribe-btn:active {
+  color: var(--ink) !important; /* #000000 (official) */
+  text-decoration: none;
+}
+/* ✅ GALERIA POSTS - FIX FINAL */
+.prose {
+  display: block;
+}
+
+/* GALERIA REAL */
+.prose p:has(img),
+.prose .gallery-p {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 10px;
+}
+
+/* garantir que imagens não rebentam layout */
+.prose img {
+  width: 100% !important;
+  height: auto;
+  border-radius: 10px;
+}
