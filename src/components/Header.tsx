@@ -23,6 +23,9 @@ export function Header() {
 
             {/* MENU */}
             <nav className="flex gap-8 text-sm font-medium">
+            <Link to="/shop" className="text-gray-400 hover:text-white transition-colors">
+                Shop
+              </Link>
               <Link to="/posts" className="text-gray-400 hover:text-white transition-colors">
                 Projects
               </Link>
@@ -73,7 +76,7 @@ export function Header() {
 
               {/* Shop */}
               <Link
-                to="/shop"
+                to="/support"
                 className="text-zinc-400 hover:text-brand transition-colors"
               >
                 <ShoppingBag className="w-5 h-5" />

@@ -17,7 +17,8 @@ import { YouTubeChannel } from './pages/YouTubeChannel';
 import { About } from './pages/About';
 import { Contact } from './pages/Contact';
 import { Legal } from './pages/Legal';
-import { Support, Shop } from './pages/SupportAndShop';
+import { Support } from './pages/SupportAndShop';
+import { Shop } from './pages/Shop';
 
 const helmetContext = {};
 
@@ -35,7 +36,7 @@ export default function App() {
             <Route path=":categorySlug/:slug" element={<PostDetail />} />
             
             {/* Pillars */}
-            <Route path="/laser" element={<PillarLaser />} />
+            <Route path="/laser" element={<PillarLaser />} />   ✅ mantém assim
             <Route path="3d-printing" element={<Pillar3D />} />
             
             {/* Single Views */}
@@ -56,4 +57,3 @@ export default function App() {
     </HelmetProvider>
   );
 }
-
