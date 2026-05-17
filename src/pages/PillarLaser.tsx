@@ -121,77 +121,99 @@ export function PillarLaser() {
     <Wrench className="w-6 h-6"/> Troubleshooting Guide
   </h2>
 
-  <div className="grid md:grid-cols-2 gap-6 text-gray-400">
+  {/* ENGRAVING ISSUES */}
+  <h3 className="text-xl font-bold text-gray-300 mb-4">Engraving Issues</h3>
+
+  <div className="grid md:grid-cols-2 gap-6 mb-10">
 
     <div className="bg-[#15181E] border border-[#1F2937] p-5 rounded-xl">
       <h4 className="text-white font-bold mb-2">Weak Engraving</h4>
-      <p className="text-sm">
-        Usually caused by low power, high speed or incorrect focus. 
-        Increase laser power, slow down movement, and make sure the focal distance is correct.
+      <p className="text-sm text-gray-400">
+        Increase power or reduce speed. Also check if the lens is clean and focus distance is correct.
       </p>
     </div>
 
     <div className="bg-[#15181E] border border-[#1F2937] p-5 rounded-xl">
-      <h4 className="text-white font-bold mb-2">Blurry or Faded Details</h4>
-      <p className="text-sm">
-        The most common cause is incorrect focus. Even a 1–2mm difference can ruin precision. 
-        Refocus carefully using the manufacturer’s recommended distance.
+      <h4 className="text-white font-bold mb-2">Blurry Details</h4>
+      <p className="text-sm text-gray-400">
+        Incorrect focus is the main cause. Always recalibrate focal height before starting.
       </p>
     </div>
+
+    <div className="bg-[#15181E] border border-[#1F2937] p-5 rounded-xl">
+      <h4 className="text-white font-bold mb-2">Burn Marks</h4>
+      <p className="text-sm text-gray-400">
+        Reduce power and increase speed. Use masking tape to protect wood surfaces.
+      </p>
+    </div>
+
+    <div className="bg-[#15181E] border border-[#1F2937] p-5 rounded-xl">
+      <h4 className="text-white font-bold mb-2">No Visible Engraving</h4>
+      <p className="text-sm text-gray-400">
+        Some materials don't react to diode lasers. Try coated materials or increase contrast.
+      </p>
+    </div>
+
+  </div>
+
+  {/* CUTTING ISSUES */}
+  <h3 className="text-xl font-bold text-gray-300 mb-4">Cutting Issues</h3>
+
+  <div className="grid md:grid-cols-2 gap-6 mb-10">
 
     <div className="bg-[#15181E] border border-[#1F2937] p-5 rounded-xl">
       <h4 className="text-white font-bold mb-2">Cut Not Going Through</h4>
-      <p className="text-sm">
-        Increase power or run multiple passes. Also check material thickness and ensure air assist is being used.
-      </p>
-    </div>
-
-    <div className="bg-[#15181E] border border-[#1F2937] p-5 rounded-xl">
-      <h4 className="text-white font-bold mb-2">Burn Marks Around Edges</h4>
-      <p className="text-sm">
-        Reduce power and increase speed slightly. Using masking tape helps prevent staining on wood surfaces.
+      <p className="text-sm text-gray-400">
+        Increase power, reduce speed or use multiple passes. Air assist is highly recommended.
       </p>
     </div>
 
     <div className="bg-[#15181E] border border-[#1F2937] p-5 rounded-xl">
       <h4 className="text-white font-bold mb-2">Excessive Charring</h4>
-      <p className="text-sm">
-        This usually means heat is accumulating. Use air assist, increase speed or reduce power.
+      <p className="text-sm text-gray-400">
+        Use air assist and increase speed slightly to reduce heat buildup.
       </p>
     </div>
 
     <div className="bg-[#15181E] border border-[#1F2937] p-5 rounded-xl">
-      <h4 className="text-white font-bold mb-2">Engraving Not Visible</h4>
-      <p className="text-sm">
-        Some materials do not react well to diode lasers. Try different settings or test on another material.
+      <h4 className="text-white font-bold mb-2">Edges Too Dark</h4>
+      <p className="text-sm text-gray-400">
+        Lower power and improve airflow. Masking also helps reduce burn marks.
       </p>
     </div>
 
-    <div className="bg-[#15181E] border border-[#1F2937] p-5 rounded-xl">
-      <h4 className="text-white font-bold mb-2">Inconsistent Depth</h4>
-      <p className="text-sm">
-        The material surface may not be flat. Ensure the object is level and the laser distance is constant.
-      </p>
-    </div>
+  </div>
+
+  {/* MACHINE ISSUES */}
+  <h3 className="text-xl font-bold text-gray-300 mb-4">Machine & Setup Issues</h3>
+
+  <div className="grid md:grid-cols-2 gap-6">
 
     <div className="bg-[#15181E] border border-[#1F2937] p-5 rounded-xl">
-      <h4 className="text-white font-bold mb-2">Laser Does Not Fire</h4>
-      <p className="text-sm">
-        Check emergency stop, safety lock, and software connection. Also ensure power is correctly supplied.
+      <h4 className="text-white font-bold mb-2">Laser Not Firing</h4>
+      <p className="text-sm text-gray-400">
+        Check safety lock, power supply and software connection.
       </p>
     </div>
 
     <div className="bg-[#15181E] border border-[#1F2937] p-5 rounded-xl">
       <h4 className="text-white font-bold mb-2">Machine Disconnecting</h4>
-      <p className="text-sm">
-        Restart the connection (USB/Bluetooth), close conflicting apps, and check cable quality.
+      <p className="text-sm text-gray-400">
+        Restart USB/Bluetooth and avoid low-quality cables.
       </p>
     </div>
 
     <div className="bg-[#15181E] border border-[#1F2937] p-5 rounded-xl">
-      <h4 className="text-white font-bold mb-2">Warped or Distorted Designs</h4>
-      <p className="text-sm">
-        Often caused by incorrect scaling or movement issues. Recalibrate and check preview alignment before engraving.
+      <h4 className="text-white font-bold mb-2">Uneven Engraving</h4>
+      <p className="text-sm text-gray-400">
+        Ensure material surface is flat and stable across the entire working area.
+      </p>
+    </div>
+
+    <div className="bg-[#15181E] border border-[#1F2937] p-5 rounded-xl">
+      <h4 className="text-white font-bold mb-2">Distorted Designs</h4>
+      <p className="text-sm text-gray-400">
+        Recalibrate frame preview and check scaling settings before engraving.
       </p>
     </div>
 

@@ -106,7 +106,7 @@ export function Home() {
           </Link>
 
           <Link
-            to="/laser-engraving"
+            to="/laser"
             className="bg-night border border-[#1F2937] p-6 rounded-2xl hover:bg-[#1F2937]/50 transition-colors group"
           >
             <div className="w-12 h-12 bg-brand/10 rounded-lg flex items-center justify-center mb-6 shadow-sm text-brand">

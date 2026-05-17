@@ -1,90 +1,164 @@
 import React from 'react';
 import { SEO } from '../components/SEO';
 import { Link } from 'react-router-dom';
-import { Cuboid, LayoutGrid, Wrench } from 'lucide-react';
+import { Printer, Settings, HelpCircle, Wrench, Layers } from 'lucide-react';
 
 export function Pillar3D() {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "Which filament should a beginner start with?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "PLA (Polylactic Acid) is the universal starting point. It prints easily, doesn't require an enclosure, smells slightly sweet while printing, and doesn't warp heavily."
-      }
-    }, {
-      "@type": "Question",
-      "name": "Why is my 3D printer not sticking to the bed?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Poor bed adhesion usually comes down to three things: an unlevel bed (nozzle is too high), a dirty build surface (clean it with isopropyl alcohol), or printing temperatures that are too low."
-      }
-    }]
-  };
 
   return (
     <div>
       <SEO 
-        title="3D Printing Guide & Machine Reviews" 
-        description="A complete guide to 3D printing. Learn about filament choices, bed leveling, assembly, and browse comprehensive reviews of modern FDM machines."
-        schema={schema}
+        title="3D Printing Hub - Ultimate Guide"
+        description="Complete guide to 3D printing: printers, materials, troubleshooting and workflow."
       />
-      
-      <div className="bg-[#15181E] text-white py-20 px-4 border-b border-[#1F2937]">
-        <div className="max-w-4xl mx-auto text-center">
-          <Cuboid className="w-16 h-16 text-brand mx-auto mb-6" />
-          <h1 className="text-4xl md:text-6xl font-serif font-bold tracking-tight mb-6 leading-tight">3D Printing Hub</h1>
-          <p className="text-xl text-gray-400 font-medium">Printer reviews, filament guides, and troubleshooting for makers.</p>
+
+      {/* HERO */}
+      <div className="bg-[#15181E] border-b border-[#1F2937] text-white py-24 px-4">
+        <div className="max-w-5xl mx-auto text-center">
+          <Printer className="w-16 h-16 text-brand mx-auto mb-6"/>
+          <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6">
+            3D Printing Hub
+          </h1>
+          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+            Learn how to design, print and troubleshoot like a pro — from beginner mistakes to advanced tuning.
+          </p>
         </div>
       </div>
 
-      <div className="max-w-4xl mx-auto px-4 py-16 prose prose-lg prose-invert prose-zinc prose-headings:font-serif prose-a:text-brand hover:prose-a:text-brand-600">
-        <h2>From Zero to Your First Print</h2>
-        <p>
-          3D printing is arguably the most powerful tool you can add to a DIY workshop. Instead of buying replacement parts or adapters, you can just model and manufacture them overnight.
-        </p>
+      <div className="max-w-5xl mx-auto px-4 py-20 text-white">
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 not-prose my-10">
-           <div className="border border-[#1F2937] bg-[#15181E] rounded-2xl p-6 hover:shadow-lg transition-shadow">
-              <LayoutGrid className="text-brand w-8 h-8 mb-4"/>
-              <h3 className="font-bold font-serif text-white text-lg mb-2">Modeling (CAD)</h3>
-              <p className="text-gray-400 text-sm">To truly unlock a printer, learn to model. I heavily recommend starting with <strong>Tinkercad</strong> for basics before graduating to Fusion360.</p>
-           </div>
-           <div className="border border-[#1F2937] bg-[#15181E] rounded-2xl p-6 hover:shadow-lg transition-shadow">
-              <Wrench className="text-brand w-8 h-8 mb-4"/>
-              <h3 className="font-bold font-serif text-white text-lg mb-2">Maintenance</h3>
-              <p className="text-gray-400 text-sm">Printers are CNC machines. They require tensioning belts, checking eccentric nuts, and cleaning the hotend regularly to prevent clogs.</p>
-           </div>
+        {/* INTRO */}
+        <div className="mb-20">
+          <h2 className="text-3xl font-serif font-bold mb-6">Why 3D Printing?</h2>
+          <p className="text-gray-400 text-lg leading-relaxed">
+            3D printing allows you to create functional parts, prototypes and custom tools on demand.
+            Once you understand the fundamentals of slicing, materials and machine calibration, 
+            it becomes one of the most powerful tools in any workshop.
+          </p>
         </div>
 
-        <h2>Recommended Machines</h2>
-        <p>If you're looking for an expansive build volume to create large pieces without slicing them up, check out my review of the Longer LK5 Pro:</p>
-        <ul>
-          <li>
-            <Link to="/3d-printing/longer-lk5-pro-3d-printer">LONGER LK5 Pro - Unboxing & Setup</Link> - A 300x300x400mm massive build volume printer that handles big jobs smoothly.
-          </li>
-        </ul>
+        {/* PRINTERS */}
+        <div className="mb-20">
+          <h2 className="text-3xl font-serif font-bold mb-6">Recommended Printers</h2>
 
-        <h2>Essential Troubleshooting: Bed Leveling</h2>
-        <p>
-          90% of your failed prints will originate in the first layer. If the first layer fails, the remaining hours of printing are doomed. Always use the "paper test" during manual leveling. Make sure there is slight resistance between the nozzle and the bed using standard printer paper.
-        </p>
+          <div className="grid md:grid-cols-2 gap-6">
 
-        <div className="mt-16 pt-12 border-t border-[#1F2937]">
-          <h2 className="mb-8 font-serif">Frequently Asked Questions</h2>
-          <div className="space-y-6">
-            <div className="bg-[#15181E] p-6 rounded-2xl border border-[#1F2937]">
-              <h4 className="font-bold text-lg mb-2 text-white">Which filament should a beginner start with?</h4>
-              <p className="text-gray-400">PLA (Polylactic Acid) is the universal starting point. It prints easily, doesn't require an enclosure, smells slightly sweet while printing, and doesn't warp heavily. Save PETG and ABS for when you need impact or heat resistance.</p>
+            <div className="bg-[#15181E] p-6 rounded-xl border border-[#1F2937]">
+              <h4 className="text-white font-bold mb-2">
+                <Link to="/posts/longer-lk5-pro-3d-printer-review-setup">
+                  Longer LK5 Pro (Your Setup)
+                </Link>
+              </h4>
+              <p className="text-gray-400 text-sm">
+                Ideal for large-format prints. Perfect for learning while working on real-world projects.
+              </p>
             </div>
-            <div className="bg-[#15181E] p-6 rounded-2xl border border-[#1F2937]">
-              <h4 className="font-bold text-lg mb-2 text-white">Why is my 3D printer not sticking to the bed?</h4>
-              <p className="text-gray-400">Poor bed adhesion usually comes down to three things: an unlevel bed (nozzle is too high), a dirty build surface (fingerprint grease prevents adhesion—clean it with isopropyl alcohol), or printing temperatures that are too low.</p>
+
+            <div className="bg-[#15181E] p-6 rounded-xl border border-[#1F2937]">
+              <h4 className="text-white font-bold mb-2">Creality Ender 3</h4>
+              <p className="text-gray-400 text-sm">
+                One of the most popular entry-level printers with huge community support.
+              </p>
             </div>
+
           </div>
         </div>
+
+        {/* TROUBLESHOOTING */}
+        <div className="mb-20">
+          <h2 className="text-3xl font-serif font-bold mb-6 flex items-center gap-3">
+            <Wrench className="w-6 h-6"/> Troubleshooting Guide
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-6 text-gray-400">
+
+            <div className="bg-[#15181E] p-6 rounded-xl border border-[#1F2937]">
+              <h4 className="text-white font-bold mb-2">Poor Bed Adhesion</h4>
+              <p className="text-sm">
+                Usually caused by poor leveling or dirty build plate. Clean the surface and adjust Z-offset.
+              </p>
+            </div>
+
+            <div className="bg-[#15181E] p-6 rounded-xl border border-[#1F2937]">
+              <h4 className="text-white font-bold mb-2">Stringing</h4>
+              <p className="text-sm">
+                Caused by incorrect retraction and high temperatures. Adjust both settings accordingly.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        {/* SOFTWARE */}
+        <div className="mb-20">
+          <h2 className="text-3xl font-serif font-bold mb-6 flex items-center gap-3">
+            <Settings className="w-6 h-6"/> Software & Workflow
+          </h2>
+
+          <div className="space-y-3">
+            <a href="https://ultimaker.com/software/ultimaker-cura/" target="_blank" rel="noreferrer" className="text-brand block">
+              Cura →
+            </a>
+
+            <a href="https://www.prusa3d.com/page/prusaslicer_424/" target="_blank" rel="noreferrer" className="text-brand block">
+              PrusaSlicer →
+            </a>
+          </div>
+        </div>
+
+        {/* ✅ FAQ EM GRID PREMIUM */}
+        <div className="border-t border-[#1F2937] pt-16">
+          <h2 className="text-3xl font-serif font-bold mb-8 flex items-center gap-3">
+            <HelpCircle className="w-6 h-6"/> FAQ
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-6">
+
+            <div className="bg-[#15181E] p-6 rounded-xl border border-[#1F2937]">
+              <h4 className="text-white font-bold mb-2">Is 3D printing expensive?</h4>
+              <p className="text-gray-400 text-sm">
+                Entry-level printers are now very affordable. The main investment becomes time spent learning and experimenting with settings.
+              </p>
+            </div>
+
+            <div className="bg-[#15181E] p-6 rounded-xl border border-[#1F2937]">
+              <h4 className="text-white font-bold mb-2">How long does a print take?</h4>
+              <p className="text-gray-400 text-sm">
+                Print time varies depending on size and detail. Small prints can take under an hour, while large prints may take several hours.
+              </p>
+            </div>
+
+            <div className="bg-[#15181E] p-6 rounded-xl border border-[#1F2937]">
+              <h4 className="text-white font-bold mb-2">Why do prints fail?</h4>
+              <p className="text-gray-400 text-sm">
+                Most failures are caused by incorrect bed leveling, temperature settings or material adhesion problems.
+              </p>
+            </div>
+
+            <div className="bg-[#15181E] p-6 rounded-xl border border-[#1F2937]">
+              <h4 className="text-white font-bold mb-2">Do I need calibration?</h4>
+              <p className="text-gray-400 text-sm">
+                Yes. Proper calibration ensures first layer success and consistent print quality across projects.
+              </p>
+            </div>
+
+            <div className="bg-[#15181E] p-6 rounded-xl border border-[#1F2937]">
+              <h4 className="text-white font-bold mb-2">Can I make money with 3D printing?</h4>
+              <p className="text-gray-400 text-sm">
+                Many people start side businesses using 3D printing to sell custom parts and designs.
+              </p>
+            </div>
+
+            <div className="bg-[#15181E] p-6 rounded-xl border border-[#1F2937]">
+              <h4 className="text-white font-bold mb-2">How often should I maintain my printer?</h4>
+              <p className="text-gray-400 text-sm">
+                Regular maintenance like cleaning, tightening belts and lubricating parts is essential for long-term reliability.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
       </div>
     </div>
   );
