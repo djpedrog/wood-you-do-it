@@ -38,7 +38,7 @@ export function getPostBySlug(slug: string): Post | undefined {
 
 export function getCategories(): string[] {
   const cats = new Set(allPosts.map(p => p.category));
-  return Array.from(cats);
+  return Array.from(cats).sort();
 }
 
 export function getPostsByCategory(category: string): Post[] {

@@ -48,7 +48,7 @@ export function Footer() {
               </Link>
             </li>
             <li>
-              <Link to="/laser-engraving" className="hover:text-brand transition-colors">
+              <Link to="/laser" className="hover:text-brand transition-colors">
                 Laser Engraving
               </Link>
             </li>
