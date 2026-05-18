@@ -3,7 +3,7 @@ import { SEO } from "../components/SEO";
 import { AdSense } from "../components/AdSense";
 import { PostCard } from "../components/PostCard";
 import { getRecentPosts } from "../lib/data";
-import { ArrowRight, Drill, Zap, Cuboid } from "lucide-react";
+import { ArrowRight, Drill, Zap, Cuboid, Youtube, Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export function Home() {
@@ -152,43 +152,68 @@ export function Home() {
           ))}
         </div>
       </section>
+      
 
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-16 flex justify-center">
       <AdSense slot="home-bottom" />
+      </div>
 
       {/* CTA Section */}
       <section className="py-20 px-4 max-w-7xl mx-auto">
-        <div className="bg-brand/10 border border-brand/30 rounded-3xl p-10 md:p-16 text-center">
-          <h2 className="text-xs font-bold text-brand uppercase tracking-widest mb-4">Support the Creator</h2>
-          <h3 className="text-3xl font-serif font-bold text-white mb-6">
-            Support the Channel &amp; the Workshop
-          </h3>
+        <div className="bg-[#15181E] border border-[#1F2937] rounded-2xl p-10 md:p-16 text-center">
+          <h2 className="text-3xl font-serif font-bold text-white mb-4">
+            Support the Creator
+          </h2>
 
           <p className="text-gray-400 text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
-            If my plans or videos have helped you, consider grabbing some merch or buying me a coffee. It helps keep the
-            tools running!
+            If my projects helped you, consider supporting the channel or follow for more builds.
           </p>
 
-          <div className="flex justify-center gap-4 flex-wrap">
-            <a
-              href="https://wood-you-do-it.creator-spring.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-secondary"
-            >
-              Visit Merch Shop
-            </a>
+          <div className="flex flex-wrap justify-center gap-4">
+              <a
+                href="https://www.youtube.com/@WoodYouDoIt"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-6 py-3 bg-[#FF0000] text-black font-bold rounded-xl hover:scale-105 transition"
+              >
+                <Youtube className="w-5 h-5 !text-black" />
+                <span className="!text-black">Subscribe</span>
+              </a>
 
-            <a
-              href="https://buymeacoffee.com/woodyoudoit"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-secondary"
-            >
-              Buy Me A Coffee
-            </a>
+              <a
+                href="https://www.instagram.com/wood_you_do_it"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-6 py-3 text-white font-bold rounded-xl hover:scale-105 transition"
+                style={{
+                  background:
+                    "linear-gradient(45deg, #f09433, #dc2743, #cc2366, #bc1888)"
+                }}
+              >
+                <Instagram className="w-5 h-5" />
+                Instagram
+              </a>
+
+              <a
+                href="https://paypal.me/djpedrog"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3 bg-[#003087] text-white font-bold rounded-xl hover:scale-105 transition"
+              >
+                💳 PayPal
+              </a>
+
+              <a
+                href="https://www.buymeacoffee.com/woodyoudoit"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-6 py-3 bg-[#FFDD00] hover:bg-[#FFCC00] font-bold rounded-xl transition-all !text-black"
+              >
+                <span className="!text-black">☕ Buy Me a Coffee</span>
+              </a>
+            </div>
           </div>
-        </div>
-      </section>
-    </div>
-  );
-}
+        </section>
+      </div>
+    );
+  }

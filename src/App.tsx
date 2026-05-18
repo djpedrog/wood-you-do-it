@@ -19,6 +19,7 @@ import { Contact } from './pages/Contact';
 import { Legal } from './pages/Legal';
 import { Support } from './pages/SupportAndShop';
 import { Shop } from './pages/Shop';
+import { ToolReview } from "./pages/ToolReview";
 
 const helmetContext = {};
 
@@ -45,6 +46,7 @@ export default function App() {
             <Route path="contact" element={<Contact />} />
             <Route path="support" element={<Support />} />
             <Route path="shop" element={<Shop />} />
+            <Route path="tools" element={<ToolReview />} />
             
             {/* Legal Pages */}
             <Route path="privacy-policy" element={<Legal type="privacy" />} />

@@ -43,7 +43,7 @@ export function Footer() {
               </Link>
             </li>
             <li>
-              <Link to="/categories/tools" className="hover:text-brand transition-colors">
+              <Link to="/tools" className="hover:text-brand transition-colors">
                 Tool Reviews
               </Link>
             </li>
