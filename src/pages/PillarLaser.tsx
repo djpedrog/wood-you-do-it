@@ -92,25 +92,49 @@ export function PillarLaser() {
             </div>
 
             <div className="bg-[#15181E] p-6 rounded-xl border border-[#1F2937]">
-              <h4 className="text-white font-bold mb-2">xTool D1 Pro</h4>
-              <p className="text-gray-400 text-sm">
-                Powerful diode system with excellent precision and modular upgrades.
-              </p>
+  <h4 className="text-white font-bold mb-2">
+    <a
+      href="https://www.xtool.eu/pages/xtool-m2-color-craft-laser-cutter-engraver"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-brand transition-colors"
+    >
+      xTool M2
+    </a>
+  </h4>
+
+  <p className="text-gray-400 text-sm">
+    A hybrid laser cutter and blade cutting machine designed for makers, crafters and small businesses. Ideal for wood, leather, acrylic and creative projects.
+  </p>
+</div>
+
+            <div className="bg-[#15181E] p-6 rounded-xl border border-[#1F2937]">
+              <h4 className="text-white font-bold mb-2">
+  <Link to="/laser-engraving/ortur-laser-master-2-pro-review">
+    Ortur Laser Master 2 Pro
+  </Link>
+</h4>
+<p className="text-gray-400 text-sm">
+  20W diode laser engraver featuring advanced safety systems, fast engraving speeds and excellent LightBurn compatibility.
+</p>
             </div>
 
             <div className="bg-[#15181E] p-6 rounded-xl border border-[#1F2937]">
-              <h4 className="text-white font-bold mb-2">Ortur Laser Master 3</h4>
-              <p className="text-gray-400 text-sm">
-                High-speed diode engraver with strong power output.
-              </p>
-            </div>
+  <h4 className="text-white font-bold mb-2">
+    <a
+      href="https://atomstack.com/en-eu/products/atomstack-ace-pro-v2"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-brand transition-colors"
+    >
+      Atomstack ACE Pro V2
+    </a>
+  </h4>
 
-            <div className="bg-[#15181E] p-6 rounded-xl border border-[#1F2937]">
-              <h4 className="text-white font-bold mb-2">Atomstack A10 Pro</h4>
-              <p className="text-gray-400 text-sm">
-                Great balance between cost and performance.
-              </p>
-            </div>
+  <p className="text-gray-400 text-sm">
+    High-performance diode laser engraver with advanced safety features, fast engraving speeds and excellent engraving precision for workshop and business use.
+  </p>
+</div>
 
           </div>
         </div>

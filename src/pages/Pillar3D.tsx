@@ -45,8 +45,8 @@ export function Pillar3D() {
 
             <div className="bg-[#15181E] p-6 rounded-xl border border-[#1F2937]">
               <h4 className="text-white font-bold mb-2">
-                <Link to="/posts/longer-lk5-pro-3d-printer-review-setup">
-                  Longer LK5 Pro (Your Setup)
+                <Link to="/3d-printing/longer-lk5-pro-3d-printer">
+                  Longer LK5 Pro (My Setup)
                 </Link>
               </h4>
               <p className="text-gray-400 text-sm">
