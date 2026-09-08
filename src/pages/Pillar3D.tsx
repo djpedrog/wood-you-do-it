@@ -126,6 +126,7 @@ export function Pillar3D() {
           </div>
         </div>
 
+
         {/* ✅ FAQ EM GRID PREMIUM */}
         <div className="border-t border-[#1F2937] pt-16">
           <h2 className="text-3xl font-serif font-bold mb-8 flex items-center gap-3">
@@ -178,6 +179,14 @@ export function Pillar3D() {
 
           </div>
         </div>
+        
+        {/* ADSENSE */}
+
+<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-16 flex justify-center">
+
+<AdSense slot="3d-hub-bottom" />
+
+</div>
 
       </div>
     </div>

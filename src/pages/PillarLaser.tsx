@@ -361,6 +361,14 @@ Unlike other GUI, LaserGRBL it is specifically developed for use with hobbist la
       </a>
     </div>
 
+    {/* ADSENSE */}
+
+<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-16 flex justify-center">
+
+<AdSense slot="3d-hub-bottom" />
+
+</div>
+
   </div>
 </div>
 
@@ -413,6 +421,14 @@ Unlike other GUI, LaserGRBL it is specifically developed for use with hobbist la
 
           </div>
         </div>
+
+        {/* ADSENSE */}
+
+<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-16 flex justify-center">
+
+<AdSense slot="3d-hub-bottom" />
+
+</div>
 
       </div>
     </div>
