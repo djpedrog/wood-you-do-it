@@ -39,7 +39,7 @@ export function Support() {
 
         {/* PAYPAL */}
         <a
-          href="https://www.paypal.com/donate/?business=RQCQCV34LK2VU&no_recurring=0&item_name=If+my+projects+helped+you%2C+support+the+channel+and+help+me+build+more.+Every+donation+makes+a+real+difference.&currency_code=EUR"
+          href="https://www.paypal.me/djpedrog"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-[#15181E] border border-blue-500 p-10 rounded-2xl hover:scale-105 transition-all flex flex-col items-center gap-4"
