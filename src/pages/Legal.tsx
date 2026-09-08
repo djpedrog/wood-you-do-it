@@ -49,8 +49,12 @@ export function Legal({ type }: { type: 'privacy' | 'cookie' | 'terms' | 'discla
     disclaimer: {
         title: "Affiliate & Liability Disclaimer",
         body: `
-          <h3>Affiliate Links</h3>
-          <p>Wood You Do It is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We may also participate in other affiliate programs (e.g., Ortur, LaserPecker, Banggood). Clicking on these links costs you nothing extra, but helps support the channel.</p>
+          <h3>Affiliate & External Links</h3>
+          <p>
+
+Some pages on this website may contain links to products, tools, software or services that I personally use, review or recommend. These links are provided for informational purposes and to help visitors find the products mentioned.
+
+In some cases, affiliate links may be used. If a purchase is made through an affiliate link, I may receive a small commission at no additional cost to you. Any such support helps fund new projects, tools and content for the channel.</p>
           
           <h3>Liability</h3>
           <p>The information contained on this website is for general information purposes only. We make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, or suitability with respect to the website or the information, products, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk.</p>

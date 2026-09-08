@@ -49,7 +49,7 @@ export function YouTubeChannel() {
       <div className="mt-20 text-center border-t border-[#1F2937] pt-16">
         <h2 className="text-2xl font-serif font-bold mb-4 text-white">Looking for something else?</h2>
         <p className="text-gray-400 mb-8 max-w-xl mx-auto">
-          I have dozens of other videos ranging from simple fixes to massive workshop remodels directly on my channel.
+          Explore more projects, workshop upgrades, tool reviews and practical DIY builds on my YouTube channel.
         </p>
         <a
           href="https://www.youtube.com/@WoodYouDoIt/videos"

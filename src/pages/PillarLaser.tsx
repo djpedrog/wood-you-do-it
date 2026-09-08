@@ -281,44 +281,48 @@ export function PillarLaser() {
             <HelpCircle className="w-6 h-6 text-gray-500"/> FAQ
           </h2>
 
-          <div className="grid gap-6">
+          <div className="grid md:grid-cols-2 gap-6">
 
             <div className="bg-[#15181E] p-6 rounded-xl border border-[#1F2937]">
               <h4 className="font-bold mb-2">Can you start a business with laser engraving?</h4>
-              <p className="text-gray-400">Yes, it's one of the most popular side hustles today.</p>
+              <p className="text-gray-400">
+  Yes. Laser engraving has become one of the most accessible ways to start a small creative business. Many makers sell personalized gifts, signage, product branding, custom workshop accessories and engraved items online. Starting small with a diode laser and focusing on niche products is often the best approach before scaling production.
+</p>
             </div>
 
             <div className="bg-[#15181E] p-6 rounded-xl border border-[#1F2937]">
               <h4 className="font-bold mb-2">Is it hard to learn?</h4>
-              <p className="text-gray-400">No, most beginners learn the basics in a few hours.</p>
+              <p className="text-gray-400">
+  Not really. Most beginners can learn the fundamentals within a few days. Modern software such as LightBurn has made the learning process much easier, and there are thousands of tutorials available online. The biggest learning curve is understanding the relationship between speed, power and material settings.
+</p>
             </div>
 
             <div className="bg-[#15181E] p-6 rounded-xl border border-[#1F2937]">
               <h4 className="font-bold mb-2">What is the best beginner machine?</h4>
               <p className="text-gray-400">
-                The LaserPecker 2 Pro is one of the easiest ways to get started.
-              </p>
+  The best machine depends on your budget and goals, but the LaserPecker 2 Pro is one of the easiest ways to get started. It offers simple setup, good portability and reliable performance. For larger projects, desktop machines such as the Ortur or Atomstack product lines offer more working area and flexibility.
+</p>
             </div>
 
             <div className="bg-[#15181E] p-6 rounded-xl border border-[#1F2937]">
               <h4 className="font-bold mb-2">Do I need ventilation?</h4>
               <p className="text-gray-400">
-                Yes. Laser engraving produces smoke and fumes. Proper ventilation is highly recommended.
-              </p>
+  Absolutely. Laser engraving produces smoke, particles and fumes that should not be inhaled. Proper ventilation improves both safety and engraving quality by removing smoke from the laser path. Whenever possible, use an extraction system, air assist and operate the machine in a well-ventilated area.
+</p>
             </div>
 
             <div className="bg-[#15181E] p-6 rounded-xl border border-[#1F2937]">
               <h4 className="font-bold mb-2">How long does it take to learn?</h4>
               <p className="text-gray-400">
-                Most beginners can start producing results within a few hours of setup and testing.
-              </p>
+  Most users can produce acceptable engravings within a few hours of setup and testing. However, mastering materials, fine-tuning settings and achieving consistent professional results usually takes a few weeks of experimentation. Like any tool, experience has a significant impact on quality and efficiency.
+</p>
             </div>
 
             <div className="bg-[#15181E] p-6 rounded-xl border border-[#1F2937]">
               <h4 className="font-bold mb-2">Is laser engraving safe indoors?</h4>
               <p className="text-gray-400">
-                It can be, but only with proper ventilation and safety precautions.
-              </p>
+  It can be safe indoors when proper precautions are followed. Good ventilation, suitable laser safety glasses and constant supervision are essential. Certain materials can release harmful fumes when engraved, so always verify material compatibility before starting a project and never leave a running laser unattended.
+</p>
             </div>
 
           </div>
