@@ -1,5 +1,6 @@
 import React from 'react';
 import { SEO } from '../components/SEO';
+import { AdSense } from '../components/AdSense';
 import { Link } from 'react-router-dom';
 import { Printer, Settings, HelpCircle, Wrench, Layers } from 'lucide-react';
 
@@ -54,12 +55,8 @@ export function Pillar3D() {
                 </Link>
               </h4>
               <p className="text-gray-400 text-sm">
-  The printer that started my 3D printing journey. With its massive 300 × 300 ×
-  400 mm build volume, quiet operation and open-source ecosystem, the Longer
-  LK5 Pro is perfect for large functional prints, workshop upgrades and custom
-  projects. It offers excellent value for money while remaining accessible to
-  beginners and capable enough for advanced makers.
-</p>
+                Ideal for large-format prints. Perfect for learning while working on real-world projects.
+              </p>
             </div>
 
             <div className="bg-[#15181E] p-6 rounded-xl border border-[#1F2937]">
@@ -81,6 +78,11 @@ export function Pillar3D() {
 
           </div>
         </div>
+
+        {/* ADSENSE */}
+<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-16 flex justify-center">
+  <AdSense slot="3d-hub" />
+</div>
 
         {/* TROUBLESHOOTING */}
         <div className="mb-20">
