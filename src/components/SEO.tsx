@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import { useLocation } from 'react-router-dom';
 
 interface SEOProps {
   title: string;
@@ -7,18 +8,41 @@ interface SEOProps {
   type?: 'website' | 'article';
   image?: string;
   url?: string;
-  schema?: Record<string, any>;
+  schema?: Record<string, unknown>;
 }
 
-export function SEO({ title, description, type = 'website', image = '/images/placeholder.svg', url, schema }: SEOProps) {
-  const fullTitle = `${title} | Wood You Do It`;
+export function SEO({
+  title,
+  description,
+  type = 'website',
+  image = '/images/placeholder.svg',
+  url,
+  schema,
+}: SEOProps) {
+  const location = useLocation();
+
   const domain = 'https://woodyoudoit.net';
-  const fullUrl = url ? `${domain}${url}` : domain;
-  const fullImage = image.startsWith('http') ? image : `${domain}${image}`;
+  const fullTitle = `${title} | Wood You Do It`;
+
+  const currentPath =
+    location.pathname === '/' ? '' : location.pathname.replace(/\/+$/, '');
+
+  const explicitUrl = url
+    ? url.startsWith('http')
+      ? url
+      : `${domain}${url.startsWith('/') ? url : `/${url}`}`
+    : null;
+
+  const fullUrl = explicitUrl || `${domain}${currentPath}`;
+
+  const fullImage = image.startsWith('http')
+    ? image
+    : `${domain}${image.startsWith('/') ? image : `/${image}`}`;
 
   return (
     <Helmet>
       <title>{fullTitle}</title>
+
       <meta name="description" content={description} />
       <link rel="canonical" href={fullUrl} />
 
